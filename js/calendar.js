@@ -15,7 +15,7 @@ function createMonthArray() {
 
     // get the remaining dates of the last month
     var prev_last_date = (new Date(curr_date.getFullYear(), curr_date.getMonth(), 0)).getDate();
-    for (var i = 0, len = 6 - first_day; i < len; i++) {
+    for (var i = 0, len = first_day; i < len; i++) {
         month.unshift(new CustomDate(prev_last_date - i, 0));
     }
     //console.log(month);
